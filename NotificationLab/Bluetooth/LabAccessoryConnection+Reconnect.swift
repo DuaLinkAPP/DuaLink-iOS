@@ -13,6 +13,8 @@ extension LabAccessoryConnection {
                   hasPendingReceive: receiveBuffer.hasPendingFrame)
         else { return false }
         subscription.reset()
+        subscriptionProbe.reset()
+        subscriptionDescriptor = nil
         peripheral?.delegate = nil
         peripheral = nil
         if let approvedID { targetPolicy = LabApprovedTargetPolicy(approvedID: approvedID) }
@@ -37,6 +39,8 @@ extension LabAccessoryConnection {
                   hasPendingReceive: receiveBuffer.hasPendingFrame)
         else { return false }
         subscription.reset()
+        subscriptionProbe.reset()
+        subscriptionDescriptor = nil
         peripheral.delegate = nil
         activeService = nil
         writeCharacteristic = nil
@@ -48,5 +52,43 @@ extension LabAccessoryConnection {
         // reconnectTransport synchronously, retaining the same ASK and central.
         central.cancelPeripheralConnection(peripheral)
         return true
+    }
+    /// A registered server can survive on the shared ACL while the peer process
+    /// loses its CCCD. Query the remote descriptor instead of cycling a live stream.
+    func readRemoteSubscription() {
+        guard !stopped, let peripheral, let notifyCharacteristic else { fail(.unavailable); return }
+        subscriptionDescriptor = nil
+        armDeadline(seconds: 10)
+        recordStage("核对远端回复订阅")
+        peripheral.discoverDescriptors(for: notifyCharacteristic)
+    }
+
+    func retrySubscriptionSetup() -> Bool {
+        subscriptionProbe.reset()
+        subscriptionDescriptor = nil
+        return reconnectIncompleteProfile()
+    }
+
+    func acceptRemoteSubscription(_ value: Int) {
+        switch subscriptionProbe.complete(value) {
+        case .subscribed:
+            subscriptionDescriptor = nil
+            cancelDeadline()
+            recordStage("远端回复订阅仍有效")
+            pumpWrites()
+        case .renew:
+            subscriptionDescriptor = nil
+            guard LabReconnectPolicy.canResume(writeOffsets: writes.map(\.offset), waitingForWrite: waitingForWrite,
+                                                hasPendingReceive: receiveBuffer.hasPendingFrame),
+                  let peripheral, let notifyCharacteristic else { fail(.unavailable); return }
+            subscription.reset()
+            let action = subscription.prepare(isData: true, isNotifying: notifyCharacteristic.isNotifying)
+            armDeadline(seconds: 20)
+            recordStage("远端订阅已丢失，恢复回复订阅")
+            peripheral.setNotifyValue(action != .disable, for: notifyCharacteristic)
+        case .invalid:
+            if retrySubscriptionSetup() { return }
+            fail(.unavailable)
+        }
     }
 }

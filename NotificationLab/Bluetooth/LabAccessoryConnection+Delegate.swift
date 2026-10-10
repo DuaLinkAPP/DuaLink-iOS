@@ -79,6 +79,8 @@ extension LabAccessoryConnection: CBCentralManagerDelegate, CBPeripheralDelegate
                                            hasPendingReceive: receiveBuffer.hasPendingFrame)
         else { fail(.unavailable); return }
         subscription.reset()
+        subscriptionProbe.reset()
+        subscriptionDescriptor = nil
         activeService = nil
         writeCharacteristic = nil
         notifyCharacteristic = nil
@@ -128,7 +130,11 @@ extension LabAccessoryConnection: CBCentralManagerDelegate, CBPeripheralDelegate
         guard !stopped, peripheral === self.peripheral,
               characteristic === notifyCharacteristic else { return }
         recordStage("BLE 订阅状态更新", detail: "notifying=\(characteristic.isNotifying), error=\(error.map { LabDiagnostics.errorCode($0) } ?? "none")")
-        guard error == nil, LabMessageModeGate.permits(modeRevision) else { fail(.unavailable); return }
+        guard LabMessageModeGate.permits(modeRevision) else { fail(.unavailable); return }
+        if error != nil {
+            if retrySubscriptionSetup() { return }
+            fail(.unavailable); return
+        }
         switch subscription.observed(isNotifying: characteristic.isNotifying) {
         case .none: return
         case .enable:
@@ -139,6 +145,7 @@ extension LabAccessoryConnection: CBCentralManagerDelegate, CBPeripheralDelegate
             LabDiagnostics.record(channel == .data ? "transport" : "security", "BLE 订阅已就绪")
             pumpWrites()
         case .lost, .disable:
+            if retrySubscriptionSetup() { return }
             fail(.unavailable)
         }
     }
@@ -155,6 +162,31 @@ extension LabAccessoryConnection: CBCentralManagerDelegate, CBPeripheralDelegate
             write.completion(.success(()))
         }
         pumpWrites()
+    }
+
+    func peripheral(_ peripheral: CBPeripheral, didDiscoverDescriptorsFor characteristic: CBCharacteristic,
+                    error: (any Error)?) {
+        guard !stopped, peripheral === self.peripheral, characteristic === notifyCharacteristic,
+              subscriptionProbe.pending, subscriptionDescriptor == nil else { return }
+        guard error == nil, let descriptor = characteristic.descriptors?.first(where: {
+            $0.uuid == CBUUID(string: CBUUIDClientCharacteristicConfigurationString)
+        }) else {
+            if retrySubscriptionSetup() { return }
+            fail(.unavailable); return
+        }
+        subscriptionDescriptor = descriptor
+        peripheral.readValue(for: descriptor)
+    }
+
+    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor descriptor: CBDescriptor,
+                    error: (any Error)?) {
+        guard !stopped, peripheral === self.peripheral, descriptor === subscriptionDescriptor,
+              subscriptionProbe.pending else { return }
+        guard error == nil, LabMessageModeGate.permits(modeRevision), let value = descriptor.value as? NSNumber else {
+            if LabMessageModeGate.permits(modeRevision), retrySubscriptionSetup() { return }
+            fail(.unavailable); return
+        }
+        acceptRemoteSubscription(value.intValue)
     }
 
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic,

@@ -40,6 +40,8 @@ final class LabAccessoryConnection: NSObject, @unchecked Sendable {
     var targetPolicy: LabApprovedTargetPolicy?
     var reconnectPolicy = LabReconnectPolicy()
     var subscription = LabSubscriptionState()
+    var subscriptionProbe = LabSubscriptionProbe()
+    var subscriptionDescriptor: CBDescriptor?
     var restoredPeripherals: [CBPeripheral] = []
     let modeRevision = LabMessageModeGate.revision
     var modeWatch: DispatchSourceTimer?
@@ -128,9 +130,12 @@ final class LabAccessoryConnection: NSObject, @unchecked Sendable {
                     recordStage("BLE 发送队列已满", detail: "frames=\(writes.count), remainingBytes=\(pendingBytes), incomingBytes=\(bytes.count)")
                     completion(.failure(.queueFull)); return
                 }
+                let checkSubscription = subscriptionProbe.begin(isData: channel == .data, ready: ready,
+                    queueEmpty: writes.isEmpty, writing: waitingForWrite)
                 writes.append(PendingWrite(bytes: bytes, completion: completion))
                 recordStage("BLE 消息已排队", detail: "frames=\(writes.count), remainingBytes=\(pendingBytes + bytes.count)")
-                pumpWrites()
+                if checkSubscription { readRemoteSubscription() }
+                else { pumpWrites() }
             } catch {
                 completion(.failure(.frameTooLarge))
             }
@@ -188,7 +193,7 @@ final class LabAccessoryConnection: NSObject, @unchecked Sendable {
 
     func pumpWrites() {
         guard LabMessageModeGate.permits(modeRevision) else { fail(.unavailable); return }
-        guard !stopped, ready, !waitingForWrite, !writes.isEmpty,
+        guard !stopped, ready, !subscriptionProbe.pending, !waitingForWrite, !writes.isEmpty,
               let peripheral, let writeCharacteristic else { return }
         let maximum = peripheral.maximumWriteValueLength(for: .withResponse)
         guard maximum > 0 else { fail(.unavailable); return }
@@ -213,6 +218,13 @@ final class LabAccessoryConnection: NSObject, @unchecked Sendable {
         let item = DispatchWorkItem { [weak self] in
             guard let self, !self.stopped, self.deadlineGeneration == generation else { return }
             self.recordStage("BLE 阶段等待超时", detail: self.targetPolicy?.summary ?? "ASKTargetUnresolved")
+            // Read/setup retries can preserve only wholly unsent frames. Never
+            // replay an outgoing partial notification or an incoming partial reply.
+            if self.subscriptionProbe.pending || !self.ready {
+                self.subscriptionProbe.reset()
+                self.subscriptionDescriptor = nil
+                if self.reconnectIncompleteProfile() || self.reconnectTransport() { return }
+            }
             self.fail(.timedOut)
         }
         deadline = item
@@ -238,6 +250,8 @@ final class LabAccessoryConnection: NSObject, @unchecked Sendable {
         guard !stopped else { return }
         stopped = true
         subscription.reset()
+        subscriptionProbe.reset()
+        subscriptionDescriptor = nil
         modeWatch?.cancel()
         modeWatch = nil
         cancelDeadline()

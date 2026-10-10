@@ -49,3 +49,41 @@ import Testing
     #expect(state.observed(isNotifying: true) == .none)
     #expect(!state.isReady)
 }
+
+@Test func idleDataBatchReadsRemoteStateBeforeSending() {
+    var probe = LabSubscriptionProbe()
+    let began = probe.begin(isData: true, ready: true, queueEmpty: true, writing: false)
+    #expect(began)
+    #expect(probe.pending)
+    let duplicate = probe.begin(isData: true, ready: true, queueEmpty: true, writing: false)
+    #expect(!duplicate)
+    let state = probe.complete(1)
+    #expect(state == .subscribed)
+    #expect(!probe.pending)
+}
+
+@Test func remoteUnsubscribeRequiresOneRenewalAndResetRejectsStaleRead() {
+    var probe = LabSubscriptionProbe()
+    _ = probe.begin(isData: true, ready: true, queueEmpty: true, writing: false)
+    let state = probe.complete(0)
+    #expect(state == .renew)
+    probe.reset()
+    let stale = probe.complete(1)
+    #expect(stale == .invalid)
+}
+
+@Test func probeDoesNotInterruptSecurityOrWrites() {
+    for (data, ready, empty, writing) in [(false, true, true, false), (true, false, true, false),
+                                         (true, true, false, false), (true, true, true, true)] {
+        var probe = LabSubscriptionProbe()
+        let started = probe.begin(isData: data, ready: ready, queueEmpty: empty, writing: writing)
+        #expect(!started)
+    }
+}
+
+@Test(arguments: [2, 3]) func remoteIndicationAlsoProvesSubscription(value: Int) {
+    var probe = LabSubscriptionProbe()
+    _ = probe.begin(isData: true, ready: true, queueEmpty: true, writing: false)
+    let result = probe.complete(value)
+    #expect(result == .subscribed)
+}
