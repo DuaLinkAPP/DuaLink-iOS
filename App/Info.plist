@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DuaLinkNotificationAppGroup</key>
+	<string>$(DUALINK_NOTIFICATION_APP_GROUP)</string>
+	<key>NSAccessorySetupBluetoothServices</key>
+	<array>
+		<string>F6E14D00-5D19-4CBD-A47D-19DBD8245E01</string>
+	</array>
+	<key>NSAccessorySetupKitSupports</key>
+	<array>
+		<string>Bluetooth</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

@@ -1,0 +1,5 @@
+// Copy this file to Local.xcconfig and supply your own signing settings.
+// Local.xcconfig is deliberately excluded from Git and release archives.
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
+DUALINK_BUNDLE_ID_PREFIX = com.yourname.dualink
+DUALINK_NOTIFICATION_APP_GROUP = group.$(DUALINK_BUNDLE_ID_PREFIX).notifications

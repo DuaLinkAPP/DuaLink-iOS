@@ -1,0 +1,1088 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00891959CA696F3CEEE2EE0F /* InteropMessageMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686ECBB9B55D203FE2DECA1D /* InteropMessageMode.swift */; };
+		03708BC3E73DE1C35B228C59 /* LabFrameCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A33E83EB6263541C69CF3 /* LabFrameCodec.swift */; };
+		039CC1C9704E243FCBBF6BFC /* InteropMessageMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686ECBB9B55D203FE2DECA1D /* InteropMessageMode.swift */; };
+		0601E116C09EFD3FB39D3691 /* LiveActivityForwardingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25375AA7A17A8EE1884F4D /* LiveActivityForwardingHandler.swift */; };
+		070B0D1E56F3D31466F84140 /* LabFrameCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A33E83EB6263541C69CF3 /* LabFrameCodec.swift */; };
+		07B32C18A525180C141E62F5 /* LabDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26E2A91D9DA0FD57A19EE2 /* LabDiagnostics.swift */; };
+		09DCFB385F9055A281E656FA /* NotificationForwardingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0539664C8DDB4A1321E6C9 /* NotificationForwardingHandler.swift */; };
+		0E306FA55C8B4E8AFC56DAD1 /* NotificationInteropModel+AutoConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5D1D9FA303680E41A75F2 /* NotificationInteropModel+AutoConnection.swift */; };
+		0FBCEADB3AC3BD6FC6F8ED4D /* NotificationSMSCompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1111E821FEA8E013B042EB1E /* NotificationSMSCompatibilityView.swift */; };
+		1000CC5EE588CAF446A67234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BE58A7C445AE72C8DB169E /* Assets.xcassets */; };
+		1103A2D984FF358630EE5A4E /* LabReconnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3628F81CCF3B8604A8ABC2D /* LabReconnectPolicy.swift */; };
+		14CDC90CC6603157BEEB691D /* LabMessageModeGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95109A66C2F0017E041173 /* LabMessageModeGate.swift */; };
+		166573708F5F791721813610 /* NotificationInteropHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA5D52371C2744ED5BD1B41 /* NotificationInteropHelpView.swift */; };
+		1F3B16E23A6250690AA145E0 /* LabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CE7423D1A559CB6547BF2 /* LabProtocol.swift */; };
+		1FBE6AA605104DDC6C7EB7E0 /* LabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CE7423D1A559CB6547BF2 /* LabProtocol.swift */; };
+		20063F7E59E690B283B48CB7 /* LabResponseLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D991131C81FCFBD7D94D /* LabResponseLedger.swift */; };
+		20996171BF74156E8A468105 /* NotificationInteropModel+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49943B590A395E1D6ADF33B /* NotificationInteropModel+Errors.swift */; };
+		20A6DEF17C1C20F2907CECE1 /* NotificationInteropModel+Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B2279709071059491E27A4 /* NotificationInteropModel+Accessory.swift */; };
+		210595B86839CB8ECB7A65EC /* PrivacyDisclosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AFEE86D08CF47571865ABF /* PrivacyDisclosureView.swift */; };
+		25E315F373C2ED6DFD7FA6D5 /* LabDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26E2A91D9DA0FD57A19EE2 /* LabDiagnostics.swift */; };
+		324E3B704B0AB2943950226C /* LabP256PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF8942A981BDFF32B84E09 /* LabP256PublicKey.swift */; };
+		32BD076E46E4469F1C44F001 /* LabLiveActivityPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080EEB73B0A9D12DBBA4C322 /* LabLiveActivityPipeline.swift */; };
+		32CAE29096D8D81F69824A57 /* LabAccessoryConnection+Receive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDBA91608D560B28201033 /* LabAccessoryConnection+Receive.swift */; };
+		344F018E81E2DB4A8EDB2B92 /* DuaLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9BFA0B207224B1BC294284 /* DuaLinkApp.swift */; };
+		37CE5F373B6679039061FF10 /* NotificationInteropModel+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76029877C33488355F2DFFB2 /* NotificationInteropModel+Connection.swift */; };
+		3BA2CDE34DA4921D14E793FB /* NotificationAutoConnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13327FEEC34D6E147C90C320 /* NotificationAutoConnectPolicy.swift */; };
+		3C5DE6417ADB8828EFF9EC9E /* NotificationConnectionNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E269724848B287BD6C77192 /* NotificationConnectionNotice.swift */; };
+		3CEADF2DA12578322C0DAFBD /* LabSubscriptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035D1CBA098918A8E96C663 /* LabSubscriptionState.swift */; };
+		3CF2495E3D11AAB5B203B50B /* NotificationInteropModel+LiveActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF148F25DB7B07D6B661BB /* NotificationInteropModel+LiveActivities.swift */; };
+		409C536DB5E9442AF20D306F /* NotificationTransportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13D554848B21E40B74840E /* NotificationTransportExtension.swift */; };
+		49186767AE38B75682C90CAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A6D621AAF5B67F2FAB58B /* Foundation.framework */; };
+		4F94A718BA7AD935CFCD66DE /* LabAccessoryConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B8853D610E5924BEBAEA0 /* LabAccessoryConnection.swift */; };
+		509FB2B24FA319362A99764B /* NotificationReconnectController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AD3EAC4B70141DB3D8C3B /* NotificationReconnectController+Delegate.swift */; };
+		54771AB6CDF5C6222C870E94 /* NotificationInteropDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04028DECA0B903782B477D37 /* NotificationInteropDataProvider.swift */; };
+		5662AFF56C4878BA2E5F9078 /* NotificationInteropState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382910D5C14F26CE079C7998 /* NotificationInteropState.swift */; };
+		5BDCD3330B7F34FF46545AD4 /* NotificationInteropModel+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E252634B402D955B5C781 /* NotificationInteropModel+Name.swift */; };
+		5CD294EBFFB08EF01FCCABA6 /* LabBuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1423DFDEAD334F238A3710 /* LabBuildConfiguration.swift */; };
+		5EBA56073940202F281DDF04 /* DuaLinkTransport.appex in Embed Notification Extensions */ = {isa = PBXBuildFile; fileRef = 756173D5A9E242E58F20C015 /* DuaLinkTransport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		64D8B324A02C7DF158F0EEAA /* DuaLinkDataProvider.appex in Embed Notification Extensions */ = {isa = PBXBuildFile; fileRef = 64C20694873F1F5671C5305A /* DuaLinkDataProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6789B6EE62972EBA2E0BEC74 /* LabAccessoryConnection+Reconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10951B18059EDF415C14002 /* LabAccessoryConnection+Reconnect.swift */; };
+		6AD8A14B38CA09EEFCC41A04 /* NotificationSetupStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AB803D65DFA1E45C65A9E4 /* NotificationSetupStep.swift */; };
+		6AEE7417DE64629F4EF50DCA /* NotificationInteropModel+Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0577B0D7369CD0A054D95 /* NotificationInteropModel+Permissions.swift */; };
+		6BCC5F021BC04BA02F15A124 /* LabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CE7423D1A559CB6547BF2 /* LabProtocol.swift */; };
+		7721AFCE501D4D275B85B3A8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4542959359CB26B0ED2CFB59 /* PrivacyInfo.xcprivacy */; };
+		78481D89019D30AB834F198C /* ForwardingDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D2AE98B2D6672C953E06E /* ForwardingDiagnostics.swift */; };
+		7B5C2F75BF118AEB59352F92 /* LabProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CE7423D1A559CB6547BF2 /* LabProtocol.swift */; };
+		80AFF8ADE18068B0B06BFFE2 /* LabAccessoryConnection+Reconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10951B18059EDF415C14002 /* LabAccessoryConnection+Reconnect.swift */; };
+		85D518DCDDC8E35874373174 /* NotificationConnectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3F80D2DC5033C614C780D /* NotificationConnectionSection.swift */; };
+		85D8ED3E6E9764BEF050D792 /* LabReconnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3628F81CCF3B8604A8ABC2D /* LabReconnectPolicy.swift */; };
+		8C05B5042BFB72E3994B3D4B /* DuaLinkSecurity.appex in Embed Notification Extensions */ = {isa = PBXBuildFile; fileRef = A5684D8359D2ABA50A52449D /* DuaLinkSecurity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D354CE25ABF4F37816E9BCB /* LabNotificationMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949D07C5F39D9968CF7FB79 /* LabNotificationMapping.swift */; };
+		8EFDEBB18E4764CE3E213014 /* LabAccessoryConnection+Receive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBDBA91608D560B28201033 /* LabAccessoryConnection+Receive.swift */; };
+		8F6E6B42EF4839B6272F0A1B /* LabReconnectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3628F81CCF3B8604A8ABC2D /* LabReconnectPolicy.swift */; };
+		90BA9D3DCC29F9A637712358 /* LabAccessoryConnection+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AC197EF3C4DE359C3C53EE /* LabAccessoryConnection+Delegate.swift */; };
+		91CA0CF3290DC5E9742C82EC /* InteropModeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C06472B7730FFC1F8DEBB /* InteropModeStore.swift */; };
+		9B7F9D30BE75E49C3811BB0F /* DuaLink.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2E427C6A5C37D7FF522EAD32 /* DuaLink.icon */; };
+		9C630DEEC3211A88D131747F /* NotificationInteropOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACAB84F1074967ED97D8904 /* NotificationInteropOverview.swift */; };
+		9CE209A89EF854626EB91D00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A6D621AAF5B67F2FAB58B /* Foundation.framework */; };
+		A096879C40076E4971DC289D /* LabDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26E2A91D9DA0FD57A19EE2 /* LabDiagnostics.swift */; };
+		A0A9C27BD7556E69F43601AB /* InteropModeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C06472B7730FFC1F8DEBB /* InteropModeStore.swift */; };
+		A1650CC3627319AE9244332D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1AB7E596683E61D4BC9B531A /* PrivacyInfo.xcprivacy */; };
+		A6105A9737C7221BA0A08873 /* LabMessageModeGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95109A66C2F0017E041173 /* LabMessageModeGate.swift */; };
+		A77C93602F9BE145B2259632 /* LabAccessoryConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B8853D610E5924BEBAEA0 /* LabAccessoryConnection.swift */; };
+		AB57465F70874C9AF401AA34 /* LabAccessoryConnection+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AC197EF3C4DE359C3C53EE /* LabAccessoryConnection+Delegate.swift */; };
+		AC10A11CF1BE5C28AF16D5AD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C45FF3B33DC55A90D1BFCF37 /* PrivacyInfo.xcprivacy */; };
+		AE0D1BE8A16A0C3BB8818B75 /* NotificationInteropModel+MessageMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EFE1BECFCEF342EDED1AEF /* NotificationInteropModel+MessageMode.swift */; };
+		BA4E25E6FA0E1B64E8D67696 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 4A133CDF2CDE2B86799CB6B4 /* PrivacyInfo.xcprivacy */; };
+		C252E36F06F1078CFB8EDD09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A6D621AAF5B67F2FAB58B /* Foundation.framework */; };
+		C32A6F2688F3C9473FD55051 /* InteropMessageMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686ECBB9B55D203FE2DECA1D /* InteropMessageMode.swift */; };
+		C35D57E8464CB5255769BED0 /* NotificationInteropModel+Rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1021189F684C7016A30EFDF5 /* NotificationInteropModel+Rename.swift */; };
+		C4C04FAF24634F0262C9FD30 /* LabBuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1423DFDEAD334F238A3710 /* LabBuildConfiguration.swift */; };
+		C85AC05D4333A77894BE6E51 /* NotificationSecurityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B378C6FAEED7A4A4E3779B04 /* NotificationSecurityExtension.swift */; };
+		C8965F234F27B99A89962E92 /* NotificationInteropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB6F9C5A1F459AF76FFE6D /* NotificationInteropView.swift */; };
+		CF76ABF5472B28FA68065380 /* NotificationAccessoryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C134DB8E058CE750AFE2DE /* NotificationAccessoryName.swift */; };
+		D0031BB3A18A59EA7F4A2164 /* LabBuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1423DFDEAD334F238A3710 /* LabBuildConfiguration.swift */; };
+		D078277E4FAF1F9136810FBE /* NotificationMessageModeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9026734BB88803153F9FFAD9 /* NotificationMessageModeSection.swift */; };
+		D5B5DECFCEA09D0A577E9868 /* InteropMessageMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686ECBB9B55D203FE2DECA1D /* InteropMessageMode.swift */; };
+		D6905E80B1A63FD7B09E1159 /* NotificationSetupLease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB07FB7F8FD82BDBE7721F /* NotificationSetupLease.swift */; };
+		D80FED7A11D1610A67295801 /* NotificationReconnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D90062D40D7F67B9BC365DD /* NotificationReconnectController.swift */; };
+		DB3D27100B14FC29E72BCF4C /* LabBuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1423DFDEAD334F238A3710 /* LabBuildConfiguration.swift */; };
+		DD79980A51A44C5E4A413A34 /* NotificationInteropSetupSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9380D4441F5D15A4B397E87 /* NotificationInteropSetupSections.swift */; };
+		DDC0E5EA7C6F41788F1DA0A4 /* InteropModeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C06472B7730FFC1F8DEBB /* InteropModeStore.swift */; };
+		DE55F2B0E2A2835CD590B8DE /* LabSubscriptionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035D1CBA098918A8E96C663 /* LabSubscriptionState.swift */; };
+		E417A64A1983205486F51D5A /* LabFrameCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A33E83EB6263541C69CF3 /* LabFrameCodec.swift */; };
+		E56F950F358E2F3891CFB9E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A6D621AAF5B67F2FAB58B /* Foundation.framework */; };
+		EFC7A9B5CFAF555E980F4D30 /* InteropModeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C06472B7730FFC1F8DEBB /* InteropModeStore.swift */; };
+		F22E4681CDC71A08CD602D3A /* LabMessageModeGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC95109A66C2F0017E041173 /* LabMessageModeGate.swift */; };
+		F35ADE36CD060BE123E1DA53 /* LabResponseLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D991131C81FCFBD7D94D /* LabResponseLedger.swift */; };
+		FE7FB772D80C47F82C928CA4 /* LabResponseLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D991131C81FCFBD7D94D /* LabResponseLedger.swift */; };
+		FEF559CB2A7A8270213E15C0 /* NotificationInteropModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CD185E6F1C0799CC94695 /* NotificationInteropModel.swift */; };
+		FF1FF73819AE6218D7806017 /* LabReceiveBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4F737599ECA7DC265C460 /* LabReceiveBuffer.swift */; };
+		FFDDA39D321376D0ECBB3E0B /* LabReceiveBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4F737599ECA7DC265C460 /* LabReceiveBuffer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3986350373FD43AEF960A53D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E6BAA45C5C410FCB64E5752 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 507E9B4272EC962ED20A7509;
+			remoteInfo = DuaLinkSecurity;
+		};
+		9334971757ED582EAE9E1D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E6BAA45C5C410FCB64E5752 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C89A896AC80F94864AC54B03;
+			remoteInfo = DuaLinkTransport;
+		};
+		CD1FC2A5AA404F48AA649937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E6BAA45C5C410FCB64E5752 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C559E047B3200D55678745;
+			remoteInfo = DuaLinkDataProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		005B0E363104D3E4C325E4A2 /* Embed Notification Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Extensions";
+			dstSubfolderSpec = 16;
+			files = (
+				64D8B324A02C7DF158F0EEAA /* DuaLinkDataProvider.appex in Embed Notification Extensions */,
+				8C05B5042BFB72E3994B3D4B /* DuaLinkSecurity.appex in Embed Notification Extensions */,
+				5EBA56073940202F281DDF04 /* DuaLinkTransport.appex in Embed Notification Extensions */,
+			);
+			name = "Embed Notification Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01B2279709071059491E27A4 /* NotificationInteropModel+Accessory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+Accessory.swift"; path = "NotificationInterop/NotificationInteropModel+Accessory.swift"; sourceTree = "<group>"; };
+		04028DECA0B903782B477D37 /* NotificationInteropDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropDataProvider.swift; path = ProductExtensions/DataProvider/NotificationInteropDataProvider.swift; sourceTree = "<group>"; };
+		080EEB73B0A9D12DBBA4C322 /* LabLiveActivityPipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabLiveActivityPipeline.swift; path = Shared/LabLiveActivityPipeline.swift; sourceTree = "<group>"; };
+		1021189F684C7016A30EFDF5 /* NotificationInteropModel+Rename.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+Rename.swift"; path = "NotificationInterop/NotificationInteropModel+Rename.swift"; sourceTree = "<group>"; };
+		105CD185E6F1C0799CC94695 /* NotificationInteropModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropModel.swift; path = NotificationInterop/NotificationInteropModel.swift; sourceTree = "<group>"; };
+		1111E821FEA8E013B042EB1E /* NotificationSMSCompatibilityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationSMSCompatibilityView.swift; path = NotificationInterop/NotificationSMSCompatibilityView.swift; sourceTree = "<group>"; };
+		13327FEEC34D6E147C90C320 /* NotificationAutoConnectPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationAutoConnectPolicy.swift; path = ProductCore/NotificationAutoConnectPolicy.swift; sourceTree = "<group>"; };
+		1AB7E596683E61D4BC9B531A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ProductExtensions/Security/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1D5D2AE98B2D6672C953E06E /* ForwardingDiagnostics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForwardingDiagnostics.swift; path = Extensions/DataProvider/ForwardingDiagnostics.swift; sourceTree = "<group>"; };
+		1FBDBA91608D560B28201033 /* LabAccessoryConnection+Receive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LabAccessoryConnection+Receive.swift"; path = "Bluetooth/LabAccessoryConnection+Receive.swift"; sourceTree = "<group>"; };
+		29B0577B0D7369CD0A054D95 /* NotificationInteropModel+Permissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+Permissions.swift"; path = "NotificationInterop/NotificationInteropModel+Permissions.swift"; sourceTree = "<group>"; };
+		2C946EE8DFD74E3DAF2CA56E /* NotificationAutoConnectPolicyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationAutoConnectPolicyTests.swift; path = Tests/NotificationAutoConnectPolicyTests.swift; sourceTree = "<group>"; };
+		2D90062D40D7F67B9BC365DD /* NotificationReconnectController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationReconnectController.swift; path = NotificationInterop/NotificationReconnectController.swift; sourceTree = "<group>"; };
+		2E427C6A5C37D7FF522EAD32 /* DuaLink.icon */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.iconcomposer.icon; path = DuaLink.icon; sourceTree = "<group>"; };
+		369EA1F222DB0A72B46FFC4A /* LabProtocolTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabProtocolTests.swift; path = Tests/LabProtocolTests.swift; sourceTree = "<group>"; };
+		382910D5C14F26CE079C7998 /* NotificationInteropState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropState.swift; path = ProductCore/NotificationInteropState.swift; sourceTree = "<group>"; };
+		3B13D554848B21E40B74840E /* NotificationTransportExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationTransportExtension.swift; path = Extensions/Transport/NotificationTransportExtension.swift; sourceTree = "<group>"; };
+		3C89B6605C5F7DE15123CC64 /* Local.xcconfig.example */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Local.xcconfig.example; sourceTree = "<group>"; };
+		3D26E2A91D9DA0FD57A19EE2 /* LabDiagnostics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabDiagnostics.swift; path = Shared/LabDiagnostics.swift; sourceTree = "<group>"; };
+		3E44309A42365F706F9475B3 /* Product.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; name = Product.entitlements; path = ProductExtensions/Security/Product.entitlements; sourceTree = "<group>"; };
+		424E252634B402D955B5C781 /* NotificationInteropModel+Name.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+Name.swift"; path = "NotificationInterop/NotificationInteropModel+Name.swift"; sourceTree = "<group>"; };
+		4542959359CB26B0ED2CFB59 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		46C134DB8E058CE750AFE2DE /* NotificationAccessoryName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationAccessoryName.swift; path = ProductCore/NotificationAccessoryName.swift; sourceTree = "<group>"; };
+		4A133CDF2CDE2B86799CB6B4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ProductExtensions/DataProvider/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4B9BFA0B207224B1BC294284 /* DuaLinkApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DuaLinkApp.swift; sourceTree = "<group>"; };
+		4D1423DFDEAD334F238A3710 /* LabBuildConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabBuildConfiguration.swift; path = Shared/LabBuildConfiguration.swift; sourceTree = "<group>"; };
+		4FE3F80D2DC5033C614C780D /* NotificationConnectionSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationConnectionSection.swift; path = NotificationInterop/NotificationConnectionSection.swift; sourceTree = "<group>"; };
+		506B6AB4A9C82E657EB539ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54AB803D65DFA1E45C65A9E4 /* NotificationSetupStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationSetupStep.swift; path = NotificationInterop/NotificationSetupStep.swift; sourceTree = "<group>"; };
+		59AC197EF3C4DE359C3C53EE /* LabAccessoryConnection+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LabAccessoryConnection+Delegate.swift"; path = "Bluetooth/LabAccessoryConnection+Delegate.swift"; sourceTree = "<group>"; };
+		5A4B8853D610E5924BEBAEA0 /* LabAccessoryConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabAccessoryConnection.swift; path = Bluetooth/LabAccessoryConnection.swift; sourceTree = "<group>"; };
+		5BAD21B017A98EEE2243C843 /* LabSubscriptionStateTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabSubscriptionStateTests.swift; path = Tests/LabSubscriptionStateTests.swift; sourceTree = "<group>"; };
+		5BFE8A57D934ECB58817F645 /* LabP256PublicKeyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabP256PublicKeyTests.swift; path = Tests/LabP256PublicKeyTests.swift; sourceTree = "<group>"; };
+		5E269724848B287BD6C77192 /* NotificationConnectionNotice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationConnectionNotice.swift; path = ProductCore/NotificationConnectionNotice.swift; sourceTree = "<group>"; };
+		61C5D1D9FA303680E41A75F2 /* NotificationInteropModel+AutoConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+AutoConnection.swift"; path = "NotificationInterop/NotificationInteropModel+AutoConnection.swift"; sourceTree = "<group>"; };
+		64C20694873F1F5671C5305A /* DuaLinkDataProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = DuaLinkDataProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		686ECBB9B55D203FE2DECA1D /* InteropMessageMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteropMessageMode.swift; path = Shared/InteropMessageMode.swift; sourceTree = "<group>"; };
+		6ABD853F3922EC4CD037E682 /* LabBuildConfigurationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabBuildConfigurationTests.swift; path = Tests/LabBuildConfigurationTests.swift; sourceTree = "<group>"; };
+		72BB07FB7F8FD82BDBE7721F /* NotificationSetupLease.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationSetupLease.swift; path = ProductCore/NotificationSetupLease.swift; sourceTree = "<group>"; };
+		756173D5A9E242E58F20C015 /* DuaLinkTransport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = DuaLinkTransport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		76029877C33488355F2DFFB2 /* NotificationInteropModel+Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+Connection.swift"; path = "NotificationInterop/NotificationInteropModel+Connection.swift"; sourceTree = "<group>"; };
+		7F2E5EDFC41F6179287DA203 /* LabReconnectPolicyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabReconnectPolicyTests.swift; path = Tests/LabReconnectPolicyTests.swift; sourceTree = "<group>"; };
+		8035D1CBA098918A8E96C663 /* LabSubscriptionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabSubscriptionState.swift; path = Shared/LabSubscriptionState.swift; sourceTree = "<group>"; };
+		80F42B4A984FEC440521AC3F /* InteropMessageModeTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteropMessageModeTests.swift; path = Tests/InteropMessageModeTests.swift; sourceTree = "<group>"; };
+		8159BB47E5020EF3EB6A3408 /* NotificationConnectionNoticeTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationConnectionNoticeTests.swift; path = Tests/NotificationConnectionNoticeTests.swift; sourceTree = "<group>"; };
+		83CF148F25DB7B07D6B661BB /* NotificationInteropModel+LiveActivities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+LiveActivities.swift"; path = "NotificationInterop/NotificationInteropModel+LiveActivities.swift"; sourceTree = "<group>"; };
+		8949D07C5F39D9968CF7FB79 /* LabNotificationMapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabNotificationMapping.swift; path = Extensions/DataProvider/LabNotificationMapping.swift; sourceTree = "<group>"; };
+		8B25375AA7A17A8EE1884F4D /* LiveActivityForwardingHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveActivityForwardingHandler.swift; path = Extensions/DataProvider/LiveActivityForwardingHandler.swift; sourceTree = "<group>"; };
+		8C96C241E57D7607916FD2F7 /* NotificationSetupLeaseTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationSetupLeaseTests.swift; path = Tests/NotificationSetupLeaseTests.swift; sourceTree = "<group>"; };
+		8E19982D925DC7158F2D266C /* DuaLink.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = DuaLink.entitlements; sourceTree = "<group>"; };
+		9026734BB88803153F9FFAD9 /* NotificationMessageModeSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationMessageModeSection.swift; path = NotificationInterop/NotificationMessageModeSection.swift; sourceTree = "<group>"; };
+		911A6D621AAF5B67F2FAB58B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		936CE7423D1A559CB6547BF2 /* LabProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabProtocol.swift; path = Shared/LabProtocol.swift; sourceTree = "<group>"; };
+		9894D7DAA3F9F01F991DCBDD /* Product.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; name = Product.entitlements; path = ProductExtensions/Transport/Product.entitlements; sourceTree = "<group>"; };
+		98BE58A7C445AE72C8DB169E /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ACAB84F1074967ED97D8904 /* NotificationInteropOverview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropOverview.swift; path = NotificationInterop/NotificationInteropOverview.swift; sourceTree = "<group>"; };
+		9D0539664C8DDB4A1321E6C9 /* NotificationForwardingHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationForwardingHandler.swift; path = Extensions/DataProvider/NotificationForwardingHandler.swift; sourceTree = "<group>"; };
+		9DC11F920E0EF2EBCF8CCA94 /* LabLiveActivityPipelineTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabLiveActivityPipelineTests.swift; path = Tests/LabLiveActivityPipelineTests.swift; sourceTree = "<group>"; };
+		9F556957CE52D77817E943B1 /* Public.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Public.xcconfig; sourceTree = "<group>"; };
+		A10951B18059EDF415C14002 /* LabAccessoryConnection+Reconnect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LabAccessoryConnection+Reconnect.swift"; path = "Bluetooth/LabAccessoryConnection+Reconnect.swift"; sourceTree = "<group>"; };
+		A3628F81CCF3B8604A8ABC2D /* LabReconnectPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabReconnectPolicy.swift; path = Shared/LabReconnectPolicy.swift; sourceTree = "<group>"; };
+		A5684D8359D2ABA50A52449D /* DuaLinkSecurity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = DuaLinkSecurity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B378C6FAEED7A4A4E3779B04 /* NotificationSecurityExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationSecurityExtension.swift; path = Extensions/Security/NotificationSecurityExtension.swift; sourceTree = "<group>"; };
+		B67E2D23BFF59E61A258E62A /* NotificationInteropStateTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropStateTests.swift; path = Tests/NotificationInteropStateTests.swift; sourceTree = "<group>"; };
+		B75FC57BEE912455EAE14E68 /* Product.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; name = Product.entitlements; path = ProductExtensions/DataProvider/Product.entitlements; sourceTree = "<group>"; };
+		BCEF8942A981BDFF32B84E09 /* LabP256PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabP256PublicKey.swift; path = Shared/LabP256PublicKey.swift; sourceTree = "<group>"; };
+		BDEB6F9C5A1F459AF76FFE6D /* NotificationInteropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropView.swift; path = NotificationInterop/NotificationInteropView.swift; sourceTree = "<group>"; };
+		C2AFEE86D08CF47571865ABF /* PrivacyDisclosureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivacyDisclosureView.swift; sourceTree = "<group>"; };
+		C45FF3B33DC55A90D1BFCF37 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ProductExtensions/Transport/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CC8F159CB247BE054E47E0F7 /* LabAccessoryAuthorizationPolicyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabAccessoryAuthorizationPolicyTests.swift; path = Tests/LabAccessoryAuthorizationPolicyTests.swift; sourceTree = "<group>"; };
+		CCE9F6142824C963DC47B673 /* DuaLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuaLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE52D991131C81FCFBD7D94D /* LabResponseLedger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabResponseLedger.swift; path = Shared/LabResponseLedger.swift; sourceTree = "<group>"; };
+		D5EFE1BECFCEF342EDED1AEF /* NotificationInteropModel+MessageMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+MessageMode.swift"; path = "NotificationInterop/NotificationInteropModel+MessageMode.swift"; sourceTree = "<group>"; };
+		D6C9C22C2D92F5D5FA676E3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProductExtensions/DataProvider/Info.plist; sourceTree = "<group>"; };
+		D89AD3EAC4B70141DB3D8C3B /* NotificationReconnectController+Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationReconnectController+Delegate.swift"; path = "NotificationInterop/NotificationReconnectController+Delegate.swift"; sourceTree = "<group>"; };
+		D9380D4441F5D15A4B397E87 /* NotificationInteropSetupSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropSetupSections.swift; path = NotificationInterop/NotificationInteropSetupSections.swift; sourceTree = "<group>"; };
+		E18CFD8CC8E779533507E303 /* Package.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		E49943B590A395E1D6ADF33B /* NotificationInteropModel+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationInteropModel+Errors.swift"; path = "NotificationInterop/NotificationInteropModel+Errors.swift"; sourceTree = "<group>"; };
+		E582D4341CDCCF8B8775B4EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProductExtensions/Security/Info.plist; sourceTree = "<group>"; };
+		E61C06472B7730FFC1F8DEBB /* InteropModeStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteropModeStore.swift; path = Shared/InteropModeStore.swift; sourceTree = "<group>"; };
+		E6BB6C1A0493DC3D05FC27EA /* LabReceiveBufferTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabReceiveBufferTests.swift; path = Tests/LabReceiveBufferTests.swift; sourceTree = "<group>"; };
+		EC95109A66C2F0017E041173 /* LabMessageModeGate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabMessageModeGate.swift; path = Shared/LabMessageModeGate.swift; sourceTree = "<group>"; };
+		FA4A33E83EB6263541C69CF3 /* LabFrameCodec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabFrameCodec.swift; path = Shared/LabFrameCodec.swift; sourceTree = "<group>"; };
+		FAE4F737599ECA7DC265C460 /* LabReceiveBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabReceiveBuffer.swift; path = Shared/LabReceiveBuffer.swift; sourceTree = "<group>"; };
+		FAF3A77A98629B15EEF5FBEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProductExtensions/Transport/Info.plist; sourceTree = "<group>"; };
+		FBA5D52371C2744ED5BD1B41 /* NotificationInteropHelpView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationInteropHelpView.swift; path = NotificationInterop/NotificationInteropHelpView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AF3764ED56650E356DDD2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49186767AE38B75682C90CAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8E6E373D1C5B805FCBF958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE209A89EF854626EB91D00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C16C074B024F29C11855E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56F950F358E2F3891CFB9E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BDEAE04F93B98B5C824E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C252E36F06F1078CFB8EDD09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D26D142F7D3199F0C8F5735 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDB6FAFB372547871D6C066F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B3D21FB2A1CDFB7FA85D050 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E19982D925DC7158F2D266C /* DuaLink.entitlements */,
+				4B9BFA0B207224B1BC294284 /* DuaLinkApp.swift */,
+				506B6AB4A9C82E657EB539ED /* Info.plist */,
+				4FE3F80D2DC5033C614C780D /* NotificationConnectionSection.swift */,
+				FBA5D52371C2744ED5BD1B41 /* NotificationInteropHelpView.swift */,
+				01B2279709071059491E27A4 /* NotificationInteropModel+Accessory.swift */,
+				61C5D1D9FA303680E41A75F2 /* NotificationInteropModel+AutoConnection.swift */,
+				76029877C33488355F2DFFB2 /* NotificationInteropModel+Connection.swift */,
+				E49943B590A395E1D6ADF33B /* NotificationInteropModel+Errors.swift */,
+				83CF148F25DB7B07D6B661BB /* NotificationInteropModel+LiveActivities.swift */,
+				D5EFE1BECFCEF342EDED1AEF /* NotificationInteropModel+MessageMode.swift */,
+				424E252634B402D955B5C781 /* NotificationInteropModel+Name.swift */,
+				29B0577B0D7369CD0A054D95 /* NotificationInteropModel+Permissions.swift */,
+				1021189F684C7016A30EFDF5 /* NotificationInteropModel+Rename.swift */,
+				105CD185E6F1C0799CC94695 /* NotificationInteropModel.swift */,
+				9ACAB84F1074967ED97D8904 /* NotificationInteropOverview.swift */,
+				D9380D4441F5D15A4B397E87 /* NotificationInteropSetupSections.swift */,
+				BDEB6F9C5A1F459AF76FFE6D /* NotificationInteropView.swift */,
+				9026734BB88803153F9FFAD9 /* NotificationMessageModeSection.swift */,
+				D89AD3EAC4B70141DB3D8C3B /* NotificationReconnectController+Delegate.swift */,
+				2D90062D40D7F67B9BC365DD /* NotificationReconnectController.swift */,
+				1111E821FEA8E013B042EB1E /* NotificationSMSCompatibilityView.swift */,
+				54AB803D65DFA1E45C65A9E4 /* NotificationSetupStep.swift */,
+				C2AFEE86D08CF47571865ABF /* PrivacyDisclosureView.swift */,
+				4542959359CB26B0ED2CFB59 /* PrivacyInfo.xcprivacy */,
+				98BE58A7C445AE72C8DB169E /* Assets.xcassets */,
+				2E427C6A5C37D7FF522EAD32 /* DuaLink.icon */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		832A0E1B3915FFEED3396A84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCE9F6142824C963DC47B673 /* DuaLink.app */,
+				64C20694873F1F5671C5305A /* DuaLinkDataProvider.appex */,
+				A5684D8359D2ABA50A52449D /* DuaLinkSecurity.appex */,
+				756173D5A9E242E58F20C015 /* DuaLinkTransport.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D4D8EA46AC267BE8B25EAFF = {
+			isa = PBXGroup;
+			children = (
+				832A0E1B3915FFEED3396A84 /* Products */,
+				4D26D142F7D3199F0C8F5735 /* Frameworks */,
+				AC4BECF4C0BA07B609779A0A /* Config */,
+				7B3D21FB2A1CDFB7FA85D050 /* App */,
+				DF9D34AD3F09CA34E6981F87 /* NotificationLab */,
+			);
+			sourceTree = "<group>";
+		};
+		AC4BECF4C0BA07B609779A0A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9F556957CE52D77817E943B1 /* Public.xcconfig */,
+				3C89B6605C5F7DE15123CC64 /* Local.xcconfig.example */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CDB6FAFB372547871D6C066F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				911A6D621AAF5B67F2FAB58B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DF9D34AD3F09CA34E6981F87 /* NotificationLab */ = {
+			isa = PBXGroup;
+			children = (
+				59AC197EF3C4DE359C3C53EE /* LabAccessoryConnection+Delegate.swift */,
+				1FBDBA91608D560B28201033 /* LabAccessoryConnection+Receive.swift */,
+				A10951B18059EDF415C14002 /* LabAccessoryConnection+Reconnect.swift */,
+				5A4B8853D610E5924BEBAEA0 /* LabAccessoryConnection.swift */,
+				1D5D2AE98B2D6672C953E06E /* ForwardingDiagnostics.swift */,
+				8949D07C5F39D9968CF7FB79 /* LabNotificationMapping.swift */,
+				8B25375AA7A17A8EE1884F4D /* LiveActivityForwardingHandler.swift */,
+				9D0539664C8DDB4A1321E6C9 /* NotificationForwardingHandler.swift */,
+				B378C6FAEED7A4A4E3779B04 /* NotificationSecurityExtension.swift */,
+				3B13D554848B21E40B74840E /* NotificationTransportExtension.swift */,
+				E18CFD8CC8E779533507E303 /* Package.swift */,
+				46C134DB8E058CE750AFE2DE /* NotificationAccessoryName.swift */,
+				13327FEEC34D6E147C90C320 /* NotificationAutoConnectPolicy.swift */,
+				5E269724848B287BD6C77192 /* NotificationConnectionNotice.swift */,
+				382910D5C14F26CE079C7998 /* NotificationInteropState.swift */,
+				72BB07FB7F8FD82BDBE7721F /* NotificationSetupLease.swift */,
+				D6C9C22C2D92F5D5FA676E3D /* Info.plist */,
+				04028DECA0B903782B477D37 /* NotificationInteropDataProvider.swift */,
+				4A133CDF2CDE2B86799CB6B4 /* PrivacyInfo.xcprivacy */,
+				B75FC57BEE912455EAE14E68 /* Product.entitlements */,
+				E582D4341CDCCF8B8775B4EB /* Info.plist */,
+				1AB7E596683E61D4BC9B531A /* PrivacyInfo.xcprivacy */,
+				3E44309A42365F706F9475B3 /* Product.entitlements */,
+				FAF3A77A98629B15EEF5FBEE /* Info.plist */,
+				C45FF3B33DC55A90D1BFCF37 /* PrivacyInfo.xcprivacy */,
+				9894D7DAA3F9F01F991DCBDD /* Product.entitlements */,
+				686ECBB9B55D203FE2DECA1D /* InteropMessageMode.swift */,
+				E61C06472B7730FFC1F8DEBB /* InteropModeStore.swift */,
+				4D1423DFDEAD334F238A3710 /* LabBuildConfiguration.swift */,
+				3D26E2A91D9DA0FD57A19EE2 /* LabDiagnostics.swift */,
+				FA4A33E83EB6263541C69CF3 /* LabFrameCodec.swift */,
+				080EEB73B0A9D12DBBA4C322 /* LabLiveActivityPipeline.swift */,
+				EC95109A66C2F0017E041173 /* LabMessageModeGate.swift */,
+				BCEF8942A981BDFF32B84E09 /* LabP256PublicKey.swift */,
+				936CE7423D1A559CB6547BF2 /* LabProtocol.swift */,
+				FAE4F737599ECA7DC265C460 /* LabReceiveBuffer.swift */,
+				A3628F81CCF3B8604A8ABC2D /* LabReconnectPolicy.swift */,
+				CE52D991131C81FCFBD7D94D /* LabResponseLedger.swift */,
+				8035D1CBA098918A8E96C663 /* LabSubscriptionState.swift */,
+				80F42B4A984FEC440521AC3F /* InteropMessageModeTests.swift */,
+				CC8F159CB247BE054E47E0F7 /* LabAccessoryAuthorizationPolicyTests.swift */,
+				6ABD853F3922EC4CD037E682 /* LabBuildConfigurationTests.swift */,
+				9DC11F920E0EF2EBCF8CCA94 /* LabLiveActivityPipelineTests.swift */,
+				5BFE8A57D934ECB58817F645 /* LabP256PublicKeyTests.swift */,
+				369EA1F222DB0A72B46FFC4A /* LabProtocolTests.swift */,
+				E6BB6C1A0493DC3D05FC27EA /* LabReceiveBufferTests.swift */,
+				7F2E5EDFC41F6179287DA203 /* LabReconnectPolicyTests.swift */,
+				5BAD21B017A98EEE2243C843 /* LabSubscriptionStateTests.swift */,
+				2C946EE8DFD74E3DAF2CA56E /* NotificationAutoConnectPolicyTests.swift */,
+				8159BB47E5020EF3EB6A3408 /* NotificationConnectionNoticeTests.swift */,
+				B67E2D23BFF59E61A258E62A /* NotificationInteropStateTests.swift */,
+				8C96C241E57D7607916FD2F7 /* NotificationSetupLeaseTests.swift */,
+			);
+			path = NotificationLab;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		507E9B4272EC962ED20A7509 /* DuaLinkSecurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1156BB7FC26B6FB7F75A4BF /* Build configuration list for PBXNativeTarget "DuaLinkSecurity" */;
+			buildPhases = (
+				8CE78439B0191D14CD025A0C /* Sources */,
+				2F8E6E373D1C5B805FCBF958 /* Frameworks */,
+				9A4DB0C3911189A56274D4B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuaLinkSecurity;
+			productName = DuaLinkSecurity;
+			productReference = A5684D8359D2ABA50A52449D /* DuaLinkSecurity.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		583100F8733E43BE2B674612 /* DuaLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CDE83B19831A12D2610AA1C /* Build configuration list for PBXNativeTarget "DuaLink" */;
+			buildPhases = (
+				63910B9236B6DC09E89250A3 /* Sources */,
+				F4BDEAE04F93B98B5C824E36 /* Frameworks */,
+				E6C2537B08084C64B495945E /* Resources */,
+				005B0E363104D3E4C325E4A2 /* Embed Notification Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50B076999A2A323CC6D6C6A4 /* PBXTargetDependency */,
+				385555A5B62846D6E765CB25 /* PBXTargetDependency */,
+				7869E72EC9ACEA541282BD49 /* PBXTargetDependency */,
+			);
+			name = DuaLink;
+			productName = DuaLink;
+			productReference = CCE9F6142824C963DC47B673 /* DuaLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58C559E047B3200D55678745 /* DuaLinkDataProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7836A02B1D7064EBD6774D33 /* Build configuration list for PBXNativeTarget "DuaLinkDataProvider" */;
+			buildPhases = (
+				63BDC08A161162352685C2E9 /* Sources */,
+				D6C16C074B024F29C11855E7 /* Frameworks */,
+				9D498AE44246ED53AC75AA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuaLinkDataProvider;
+			productName = DuaLinkDataProvider;
+			productReference = 64C20694873F1F5671C5305A /* DuaLinkDataProvider.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		C89A896AC80F94864AC54B03 /* DuaLinkTransport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CBBA513F71E988AA25260D /* Build configuration list for PBXNativeTarget "DuaLinkTransport" */;
+			buildPhases = (
+				69CC9804003216C2AFEB274A /* Sources */,
+				2AF3764ED56650E356DDD2C7 /* Frameworks */,
+				3F9C823D4DECF441EAE31B4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuaLinkTransport;
+			productName = DuaLinkTransport;
+			productReference = 756173D5A9E242E58F20C015 /* DuaLinkTransport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E6BAA45C5C410FCB64E5752 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					507E9B4272EC962ED20A7509 = {
+						ProvisioningStyle = Automatic;
+					};
+					583100F8733E43BE2B674612 = {
+						ProvisioningStyle = Automatic;
+					};
+					58C559E047B3200D55678745 = {
+						ProvisioningStyle = Automatic;
+					};
+					C89A896AC80F94864AC54B03 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D38D46A1A0713476DE488D04 /* Build configuration list for PBXProject "DuaLink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D4D8EA46AC267BE8B25EAFF;
+			productRefGroup = 832A0E1B3915FFEED3396A84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583100F8733E43BE2B674612 /* DuaLink */,
+				58C559E047B3200D55678745 /* DuaLinkDataProvider */,
+				507E9B4272EC962ED20A7509 /* DuaLinkSecurity */,
+				C89A896AC80F94864AC54B03 /* DuaLinkTransport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F9C823D4DECF441EAE31B4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC10A11CF1BE5C28AF16D5AD /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4DB0C3911189A56274D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1650CC3627319AE9244332D /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D498AE44246ED53AC75AA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4E25E6FA0E1B64E8D67696 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C2537B08084C64B495945E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1000CC5EE588CAF446A67234 /* Assets.xcassets in Resources */,
+				9B7F9D30BE75E49C3811BB0F /* DuaLink.icon in Resources */,
+				7721AFCE501D4D275B85B3A8 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63910B9236B6DC09E89250A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344F018E81E2DB4A8EDB2B92 /* DuaLinkApp.swift in Sources */,
+				85D518DCDDC8E35874373174 /* NotificationConnectionSection.swift in Sources */,
+				166573708F5F791721813610 /* NotificationInteropHelpView.swift in Sources */,
+				20A6DEF17C1C20F2907CECE1 /* NotificationInteropModel+Accessory.swift in Sources */,
+				0E306FA55C8B4E8AFC56DAD1 /* NotificationInteropModel+AutoConnection.swift in Sources */,
+				37CE5F373B6679039061FF10 /* NotificationInteropModel+Connection.swift in Sources */,
+				20996171BF74156E8A468105 /* NotificationInteropModel+Errors.swift in Sources */,
+				3CF2495E3D11AAB5B203B50B /* NotificationInteropModel+LiveActivities.swift in Sources */,
+				AE0D1BE8A16A0C3BB8818B75 /* NotificationInteropModel+MessageMode.swift in Sources */,
+				5BDCD3330B7F34FF46545AD4 /* NotificationInteropModel+Name.swift in Sources */,
+				6AEE7417DE64629F4EF50DCA /* NotificationInteropModel+Permissions.swift in Sources */,
+				C35D57E8464CB5255769BED0 /* NotificationInteropModel+Rename.swift in Sources */,
+				FEF559CB2A7A8270213E15C0 /* NotificationInteropModel.swift in Sources */,
+				9C630DEEC3211A88D131747F /* NotificationInteropOverview.swift in Sources */,
+				DD79980A51A44C5E4A413A34 /* NotificationInteropSetupSections.swift in Sources */,
+				C8965F234F27B99A89962E92 /* NotificationInteropView.swift in Sources */,
+				D078277E4FAF1F9136810FBE /* NotificationMessageModeSection.swift in Sources */,
+				509FB2B24FA319362A99764B /* NotificationReconnectController+Delegate.swift in Sources */,
+				D80FED7A11D1610A67295801 /* NotificationReconnectController.swift in Sources */,
+				0FBCEADB3AC3BD6FC6F8ED4D /* NotificationSMSCompatibilityView.swift in Sources */,
+				6AD8A14B38CA09EEFCC41A04 /* NotificationSetupStep.swift in Sources */,
+				210595B86839CB8ECB7A65EC /* PrivacyDisclosureView.swift in Sources */,
+				D0031BB3A18A59EA7F4A2164 /* LabBuildConfiguration.swift in Sources */,
+				039CC1C9704E243FCBBF6BFC /* InteropMessageMode.swift in Sources */,
+				EFC7A9B5CFAF555E980F4D30 /* InteropModeStore.swift in Sources */,
+				6BCC5F021BC04BA02F15A124 /* LabProtocol.swift in Sources */,
+				8F6E6B42EF4839B6272F0A1B /* LabReconnectPolicy.swift in Sources */,
+				CF76ABF5472B28FA68065380 /* NotificationAccessoryName.swift in Sources */,
+				3BA2CDE34DA4921D14E793FB /* NotificationAutoConnectPolicy.swift in Sources */,
+				3C5DE6417ADB8828EFF9EC9E /* NotificationConnectionNotice.swift in Sources */,
+				5662AFF56C4878BA2E5F9078 /* NotificationInteropState.swift in Sources */,
+				D6905E80B1A63FD7B09E1159 /* NotificationSetupLease.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63BDC08A161162352685C2E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD294EBFFB08EF01FCCABA6 /* LabBuildConfiguration.swift in Sources */,
+				00891959CA696F3CEEE2EE0F /* InteropMessageMode.swift in Sources */,
+				91CA0CF3290DC5E9742C82EC /* InteropModeStore.swift in Sources */,
+				14CDC90CC6603157BEEB691D /* LabMessageModeGate.swift in Sources */,
+				7B5C2F75BF118AEB59352F92 /* LabProtocol.swift in Sources */,
+				A096879C40076E4971DC289D /* LabDiagnostics.swift in Sources */,
+				FE7FB772D80C47F82C928CA4 /* LabResponseLedger.swift in Sources */,
+				03708BC3E73DE1C35B228C59 /* LabFrameCodec.swift in Sources */,
+				32BD076E46E4469F1C44F001 /* LabLiveActivityPipeline.swift in Sources */,
+				78481D89019D30AB834F198C /* ForwardingDiagnostics.swift in Sources */,
+				8D354CE25ABF4F37816E9BCB /* LabNotificationMapping.swift in Sources */,
+				0601E116C09EFD3FB39D3691 /* LiveActivityForwardingHandler.swift in Sources */,
+				09DCFB385F9055A281E656FA /* NotificationForwardingHandler.swift in Sources */,
+				54771AB6CDF5C6222C870E94 /* NotificationInteropDataProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CC9804003216C2AFEB274A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C04FAF24634F0262C9FD30 /* LabBuildConfiguration.swift in Sources */,
+				D5B5DECFCEA09D0A577E9868 /* InteropMessageMode.swift in Sources */,
+				A0A9C27BD7556E69F43601AB /* InteropModeStore.swift in Sources */,
+				A6105A9737C7221BA0A08873 /* LabMessageModeGate.swift in Sources */,
+				1F3B16E23A6250690AA145E0 /* LabProtocol.swift in Sources */,
+				07B32C18A525180C141E62F5 /* LabDiagnostics.swift in Sources */,
+				F35ADE36CD060BE123E1DA53 /* LabResponseLedger.swift in Sources */,
+				070B0D1E56F3D31466F84140 /* LabFrameCodec.swift in Sources */,
+				1103A2D984FF358630EE5A4E /* LabReconnectPolicy.swift in Sources */,
+				FF1FF73819AE6218D7806017 /* LabReceiveBuffer.swift in Sources */,
+				DE55F2B0E2A2835CD590B8DE /* LabSubscriptionState.swift in Sources */,
+				409C536DB5E9442AF20D306F /* NotificationTransportExtension.swift in Sources */,
+				AB57465F70874C9AF401AA34 /* LabAccessoryConnection+Delegate.swift in Sources */,
+				8EFDEBB18E4764CE3E213014 /* LabAccessoryConnection+Receive.swift in Sources */,
+				80AFF8ADE18068B0B06BFFE2 /* LabAccessoryConnection+Reconnect.swift in Sources */,
+				4F94A718BA7AD935CFCD66DE /* LabAccessoryConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE78439B0191D14CD025A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3D27100B14FC29E72BCF4C /* LabBuildConfiguration.swift in Sources */,
+				C32A6F2688F3C9473FD55051 /* InteropMessageMode.swift in Sources */,
+				DDC0E5EA7C6F41788F1DA0A4 /* InteropModeStore.swift in Sources */,
+				F22E4681CDC71A08CD602D3A /* LabMessageModeGate.swift in Sources */,
+				1FBE6AA605104DDC6C7EB7E0 /* LabProtocol.swift in Sources */,
+				25E315F373C2ED6DFD7FA6D5 /* LabDiagnostics.swift in Sources */,
+				20063F7E59E690B283B48CB7 /* LabResponseLedger.swift in Sources */,
+				E417A64A1983205486F51D5A /* LabFrameCodec.swift in Sources */,
+				324E3B704B0AB2943950226C /* LabP256PublicKey.swift in Sources */,
+				85D8ED3E6E9764BEF050D792 /* LabReconnectPolicy.swift in Sources */,
+				FFDDA39D321376D0ECBB3E0B /* LabReceiveBuffer.swift in Sources */,
+				3CEADF2DA12578322C0DAFBD /* LabSubscriptionState.swift in Sources */,
+				C85AC05D4333A77894BE6E51 /* NotificationSecurityExtension.swift in Sources */,
+				90BA9D3DCC29F9A637712358 /* LabAccessoryConnection+Delegate.swift in Sources */,
+				32CAE29096D8D81F69824A57 /* LabAccessoryConnection+Receive.swift in Sources */,
+				6789B6EE62972EBA2E0BEC74 /* LabAccessoryConnection+Reconnect.swift in Sources */,
+				A77C93602F9BE145B2259632 /* LabAccessoryConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		385555A5B62846D6E765CB25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DuaLinkSecurity;
+			target = 507E9B4272EC962ED20A7509 /* DuaLinkSecurity */;
+			targetProxy = 3986350373FD43AEF960A53D /* PBXContainerItemProxy */;
+		};
+		50B076999A2A323CC6D6C6A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DuaLinkDataProvider;
+			target = 58C559E047B3200D55678745 /* DuaLinkDataProvider */;
+			targetProxy = CD1FC2A5AA404F48AA649937 /* PBXContainerItemProxy */;
+		};
+		7869E72EC9ACEA541282BD49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DuaLinkTransport;
+			target = C89A896AC80F94864AC54B03 /* DuaLinkTransport */;
+			targetProxy = 9334971757ED582EAE9E1D2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E3B6298E61FB702AB452943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = DuaLink;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = App/DuaLink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DuaLink;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "用于连接你授权的鸿蒙手机并传输通知回复。";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT DEBUG";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8251C4B8B91F3B169789E709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = NotificationLab/ProductExtensions/Security/Product.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationLab/ProductExtensions/Security/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX).security";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF929EE73EC7C3F76EACD53B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = NotificationLab/ProductExtensions/Security/Product.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationLab/ProductExtensions/Security/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX).security";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT DEBUG";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D4818BBB51E0B86701F4DC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = NotificationLab/ProductExtensions/DataProvider/Product.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationLab/ProductExtensions/DataProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX).dataprovider";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT DEBUG";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D81C0518507094C4F1066A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = DuaLink;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = App/DuaLink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DuaLink;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "用于连接你授权的鸿蒙手机并传输通知回复。";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8ECE9D2C305052975E1029A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F556957CE52D77817E943B1 /* Public.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB41CFBD9B0AE133518CCC2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = NotificationLab/ProductExtensions/Transport/Product.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationLab/ProductExtensions/Transport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX).transport";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD6256CF32AA7EA816B3D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = NotificationLab/ProductExtensions/Transport/Product.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationLab/ProductExtensions/Transport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX).transport";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT DEBUG";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EF3D245B514AAF6F28300156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = NotificationLab/ProductExtensions/DataProvider/Product.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationLab/ProductExtensions/DataProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(DUALINK_BUNDLE_ID_PREFIX).dataprovider";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DUALINK_NOTIFICATIONS_PRODUCT";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F13C82E2880B8A83ACBA51E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F556957CE52D77817E943B1 /* Public.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CDE83B19831A12D2610AA1C /* Build configuration list for PBXNativeTarget "DuaLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81C0518507094C4F1066A24 /* Release */,
+				0E3B6298E61FB702AB452943 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7836A02B1D7064EBD6774D33 /* Build configuration list for PBXNativeTarget "DuaLinkDataProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3D245B514AAF6F28300156 /* Release */,
+				D4818BBB51E0B86701F4DC34 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1156BB7FC26B6FB7F75A4BF /* Build configuration list for PBXNativeTarget "DuaLinkSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8251C4B8B91F3B169789E709 /* Release */,
+				AF929EE73EC7C3F76EACD53B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D38D46A1A0713476DE488D04 /* Build configuration list for PBXProject "DuaLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8ECE9D2C305052975E1029A /* Debug */,
+				F13C82E2880B8A83ACBA51E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CBBA513F71E988AA25260D /* Build configuration list for PBXNativeTarget "DuaLinkTransport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB41CFBD9B0AE133518CCC2E /* Release */,
+				ECD6256CF32AA7EA816B3D4E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E6BAA45C5C410FCB64E5752 /* Project object */;
+}

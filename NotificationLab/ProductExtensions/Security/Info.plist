@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>用于将 iPhone 通知加密传输到已授权的鸿蒙手机，并接收回复或关闭操作。</string>
+	<key>NSAccessorySetupKitSupports</key>
+	<array>
+		<string>Bluetooth</string>
+	</array>
+	<key>NSAccessorySetupBluetoothServices</key>
+	<array>
+		<string>F6E14D00-5D19-4CBD-A47D-19DBD8245E01</string>
+	</array>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
+	<key>CFBundleDisplayName</key>
+	<string>DuaLink 安全连接</string>
+	<key>EXAppExtensionAttributes</key>
+	<dict>
+		<key>EXExtensionPointIdentifier</key>
+		<string>com.apple.accessory-transport-security</string>
+	</dict>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>esp.dualink.notifications.protocol</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data-access-protocol</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>DuaLink Notification Interoperability</string>
+		</dict>
+	</array>
+	<key>DuaLinkNotificationAppGroup</key>
+	<string>$(DUALINK_NOTIFICATION_APP_GROUP)</string>
+</dict>
+</plist>

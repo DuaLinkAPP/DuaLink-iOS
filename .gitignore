@@ -1,0 +1,26 @@
+# Local signing configuration, credentials, and per-user Xcode state
+Config/Local.xcconfig
+.env
+.env.*
+*.p8
+*.p12
+*.pem
+*.key
+*.cer
+*.mobileprovision
+xcuserdata/
+*.xcuserstate
+.DS_Store
+
+# Generated output is never part of the public source package
+.build/
+.swiftpm/
+DerivedData*/
+build/
+*.log
+*.ipa
+*.xcarchive/
+*.dSYM/
+*.dSYM.zip
+*.zip
+__pycache__/

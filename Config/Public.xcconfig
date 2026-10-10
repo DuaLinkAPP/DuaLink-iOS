@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: MPL-2.0
+// Public defaults contain no developer account. Set a unique prefix and your
+// team in Local.xcconfig before signing for a physical iPhone.
+DEVELOPMENT_TEAM =
+DUALINK_BUNDLE_ID_PREFIX = org.dualink.opensource
+DUALINK_NOTIFICATION_APP_GROUP = group.$(DUALINK_BUNDLE_ID_PREFIX).notifications
+CODE_SIGN_STYLE = Automatic
+#include? "Local.xcconfig"
